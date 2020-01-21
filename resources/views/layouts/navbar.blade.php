@@ -20,9 +20,10 @@
           <span class="sr-only">(current)</span>
         </a>
       </li>
-      <!-- <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="{{url('/create')}}">Añadir</a>
       </li>
+      <!--
       <li class="nav-item">
         <a class="nav-link" href="#">Pricing</a>
       </li>
