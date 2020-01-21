@@ -2,8 +2,9 @@
 @section('content')
 
 <!-- Default form register -->
-<form class="text-center border border-light p-5" action="#!">
+<form class="text-center border border-light p-5" action="{{route('store') }}" method="POST">
 
+{{ csrf_field() }}
     <p class="h4 mb-4">Alumno</p>
 
     <div class="form-row mb-4">
@@ -18,7 +19,7 @@
     </div>
 
     <!-- E-mail -->
-    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" name="eamail" placeholder="E-mail">
+    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" name="email" placeholder="E-mail">
 
 
     <!-- Phone number -->
