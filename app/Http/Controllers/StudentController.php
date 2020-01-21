@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Students;
+use App\StudentS;
 
 class StudentController extends Controller
 {
@@ -21,13 +21,13 @@ class StudentController extends Controller
             'telefono' => 'required'
         ]  );
 
-        $estudiante = new Students;
+        $estudiante = new StudentS;
         $estudiante->nombre = $request->nombre;
         $estudiante->apellidos = $request->apellidos;
         $estudiante->email = $request->email;
         $estudiante->telefono = $request->telefono;
         $estudiante->save();
-        return redirect (route('home'));
+        return redirect (route('home'))->with('successMsg','Estudiante añadido correctamente');
 
 
     }
