@@ -50,6 +50,5 @@
     @endforeach
   </tbody>
 </table>
-
-
+{{$estudiantes->links()}}
 @endsection
