@@ -54,5 +54,11 @@ class StudentController extends Controller
         return redirect (route('home'))->with('successMsg','Estudiante modificado correctamente');
     }
 
+    public function delete($id){
+        $estudiante = Students::find($id);
+        $estudiante->delete();
+        return redirect (route('home'))->with('successMsg','Estudiante borrado correctamente');
+    }
+
 }
 
